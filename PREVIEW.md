@@ -13,8 +13,9 @@
 ## Repo
 
 - https://github.com/mihawnk-nft/u-ronigrv-the-one-line-laugh-7ccca46f
-- Commit: `aeb9b06126c319af4b57bd1ecc7b77896aea1aad`
+- Commit: `fef138114a2c496bbfbdc8fb430edb95dbeabd27`
 - Public, dibuat 2026-11-23T19:55:41Z (setelah buka 19:50:19Z), LICENSE MIT, README 3 badge make.fun, About: website make.fun + topik `makefun`.
+- `main.py` menegakkan aturan satu kalimat: tepat satu terminator kalimat (`.`) di karakter terakhir — revisi kedua setelah kit check pertama.
 
 ## Kompetisi
 
@@ -24,5 +25,5 @@
 
 ## Yang masih perlu sebelum submit
 
-- `transcripts.tar.gz` + `check` — bundle butuh usage rows Muse yang baru ditulis setelah run builder ini selesai; parent agent yang melampirkan (`--muse-usage`) lalu menjalankan `check` sampai lolos.
+- `transcripts.tar.gz` + `check` — kit check terakhir: **13 passed, 1 failed** (`thinking_priced` saja: 0 usage rows — row usage Muse baru ditulis setelah run builder ini selesai; parent agent melampirkan via `--muse-usage` lalu re-bundle + re-check; `thinking_revised` sudah lolos setelah revisi main.py). Bundle terakhir: `~/workspace/makefun/u-ronigrv-the-one-line-laugh-7ccca46f-transcripts.tar.gz`, sha256 `c684feeaf7f713f427f6b34028efff73be896ed9b284493c7c9acaf276eba1b5` (dibuat sebelum update PREVIEW.md ini — re-bundle saat lampirkan usage rows).
 - Submit HANYA atas perintah eksplisit user di chat.
