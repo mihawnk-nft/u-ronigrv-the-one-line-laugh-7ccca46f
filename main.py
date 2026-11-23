@@ -37,6 +37,12 @@ def main() -> int:
     if "\n" in text or "\r" in text:
         print("entry must be a single line", file=sys.stderr)
         return 1
+    # The rules require a single sentence: exactly one sentence
+    # terminator, and it must be the final character.
+    terminators = sum(1 for ch in text if ch in ".!?")
+    if terminators != 1 or text[-1] not in ".!?":
+        print("entry must be a single sentence", file=sys.stderr)
+        return 1
     # The judge reads printable text: no control characters, and at
     # least one letter so it cannot be punctuation alone.
     if any(unicodedata.category(ch).startswith("C") for ch in text):
